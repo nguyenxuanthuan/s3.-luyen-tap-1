@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Nếu doanh số dưới 5 triệu :0%.
+    //Nếu doanh số 5 -7: hoa hồng là 3%
+    //Nếu doanh số 7 -10tr: hoa hồng là 5%
+    //Nếu doanh số từ 10-15tr: hoa hồng là 7%
+    //>15tr hoa hồng là 10%
+
+    var doanhso = parseInt(prompt(" Nhap doanh so ban hang cua ban tai day: "));
+    var phantramhoahong1 = 3 / 100;
+    var phantramhoahong2 = 5 / 100;
+    var phantramhoahong3 = 7 / 100;
+    var phantramhoahong4 = 10 / 100;
+    var phantramhoahong = 0;
+
+
+    if (doanhso >= 5 && doanhso < 7) {
+        phantramhoahong = phantramhoahong1;
+    } else {
+        if (doanhso >= 7 && doanhso < 10) {
+            phantramhoahong = phantramhoahong2;
+
+        } else {
+            if (doanhso >= 10 && doanhso < 15) {
+                phantramhoahong = phantramhoahong3;
+            } else {
+                if (doanhso > 15) {
+                    phantramhoahong = phantramhoahong4;
+                } else {
+                    alert("Ban khong du dieu kien")
+                }
+            }
+        }
+
+    }
+    var tienhoahong = doanhso * phantramhoahong;
+    alert("So tien hoa hong ban nhan duoc la: " + tienhoahong +"tr VNĐ");
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var diemkiemtra = parseInt(prompt("nhap diem kiem tra"));
+    var diemkiemtragiuaky = parseInt(prompt("nhap diem kiem tra giua ky:"))
+    var diemkiemtracuoiky = parseInt(prompt("nhap diem kiem tra cuoi ky:"))
+    var diemtongket = (diemkiemtra + diemkiemtragiuaky*2 + diemkiemtracuoiky*3)/6;
+
+
+    if(diemtongket <4){
+        alert("diem tong ket la: "+ diemtongket +" hoc sinh khong dat");
+    }else if (diemtongket >=4 && diemtongket <5.5){
+        alert("diem tong ket la: "+ diemtongket +" hoc sinh xep loai D");
+    }else{
+        if(diemtongket >=5.5 &&diemtongket < 7.0){
+            alert("diem tong ket la: "+ diemtongket +" hoc sinh xep loai C");
+        }else {
+            if(diemtongket >=7.0 && diemtongket <8.5){
+                alert("diem tong ket la: "+ diemtongket +" hoc sinh xep loai B");
+            }else {
+                if(diemtongket >=8.5&& diemtongket<10){
+                    alert("diem tong ket la: "+ diemtongket +" hoc sinh xep loai A");
+                }else{
+                    alert ("hoc sinh xep loai A+")
+                };
+            };
+        };
+    };
+</script>
+
+
+</body>
+</html>
